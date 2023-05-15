@@ -1,0 +1,126 @@
+.footer-container {}
+
+.social-links,
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-btn {
+  cursor: pointer;
+  height: 50px;
+  width: 50px;
+  font-family: 'Titillium Web', sans-serif;
+  color: #333;
+  border-radius: 10px;
+  -webkit-box-shadow: 5px 5px 0px 0px #82B830, 10px 10px 0px 0px #9ED93E, 15px 15px 0px 0px #B9E855, 20px 20px 0px 0px #D3F16B, 25px 25px 0px 0px #EDFC81, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+  box-shadow: 5px 5px 0px 0px #82B830, 10px 10px 0px 0px #9ED93E, 15px 15px 0px 0px #B9E855, 20px 20px 0px 0px #D3F16B, 25px 25px 0px 0px #EDFC81, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+  background: rgb(255, 255, 255);
+  margin: 5px;
+  transition: 0.3s;
+  justify-content: center;
+}
+
+.social-btn svg {
+  height: 24px;
+  width: 24px;
+}
+
+.social-btn span {
+  width: 0px;
+  overflow: hidden;
+  transition: 0.3s;
+  text-align: center;
+  margin-left: 5px;
+}
+
+//   .social-btn:hover {
+//     width: 150px;
+//     border-radius: 5px;
+//   }
+
+//   .social-btn:hover span {
+//     padding: 2px;
+//     width: 80px;
+//   }
+
+
+#linkedin svg {
+  fill: #0e76a8;
+}
+
+#github {
+  fill: #333;
+}
+
+// Animation
+
+.animated-text {
+    font-size: 1.5rem;
+  }
+
+  .text {
+    opacity: 0;
+  }
+
+.tracking-in-contract {
+  -webkit-animation: text-focus-in 0.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both, scale-in-center 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  animation: text-focus-in 0.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both, scale-in-center 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@-webkit-keyframes tracking-in-contract {
+  0% {
+    -webkit-filter: blur(12px);
+    filter: blur(12px);
+    opacity: 0;
+  }
+
+  100% {
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes text-focus-in {
+  0% {
+    -webkit-filter: blur(12px);
+    filter: blur(12px);
+    opacity: 0;
+  }
+
+  100% {
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes scale-in-center {
+  0% {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    opacity: 1;
+  }
+
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes scale-in-center {
+  0% {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    opacity: 1;
+  }
+
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 1;
+  }
+}
