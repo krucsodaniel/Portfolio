@@ -1,1 +1,31 @@
-<p>projects works!</p>
+<div class="container main-container py-5 d-md-flex text-center">
+
+    <h1 class="my-5">My projects</h1>
+
+    <div class="card my-5" *ngFor="let project of projects$ | async">
+        <img [src]="project.projectPicture" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">{{project.projectName}}</h5>
+          <p class="card-text">{{project.projectDescription}}</p>
+          <div class="accordion" id="accordionPanelsStayOpenExample">
+
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button" type="button" [attr.data-bs-toggle]="'collapse'" [attr.data-bs-target]="'#collapse-' + project.projectId" [attr.aria-expanded]="false" [attr.aria-controls]="'collapse-' + project.projectId">
+                    More
+                  </button>
+              </h2>
+              <div [id]="'collapse-' + project.projectId" class="accordion-collapse collapse">
+                <div class="accordion-body">
+                  <p>{{project.projectContent}}</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+
+</div>
